@@ -16,6 +16,24 @@ body {
   margin: 0 auto;
 }
 
+[class^=col-] {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.row:after {
+  content:'';
+  display: table;
+  clear: both;
+}
+
+.dp-in-block {
+  display: inline-block;
+}
+
 .col-100 {
   width: 100%;
 }
@@ -24,9 +42,12 @@ body {
   width: calc(100% / 2);
 }
 
+.col-33 {
+  width: calc(100% / 3);
+}
+
 .bg-lightblue {
   background: #F4F9FD;
-  border: 1px solid #32495B;
 }
 
 .bg-white {
@@ -36,12 +57,25 @@ body {
 .bg-orange {
   background-color: #FE775A;
 }
+
+.pt-10 {
+  padding-top: 10px;
+}
+
 .pr-20 {
   padding-right: 20px;
 }
 
 .pl-20 {
   padding-left: 20px;
+}
+
+.pl-10 {
+  padding-left: 10px;
+}
+
+.mr-15 {
+  margin-right: 15px;
 }
 
 .mt-20px {
@@ -66,7 +100,7 @@ body {
 }
 
 .text-blue {
-  color: #32495B;
+  color: #33475b;
 }
 /* BUTTONS */
 .btn {
@@ -82,39 +116,24 @@ body {
 
 /* NAV */
 /* SEARCH BAR */
+.wrapper {
+  height: 80px;
+}
+
 .search-bar {
   height: 80px;
   width: 100%;
-  display: block;
   position: fixed;
-  top: 0;
-  left: 0;
   z-index: 1;
+  border-bottom: 1px solid #32495B;
 }
 
 .sb-left {
-  display: inline-block;
   line-height: 80px;
 }
 
 .sb-right {
-  display: inline-block;
-  float: right;
-  padding: 15px;
-}
-
-.row:after {
-  content:'';
-  display: table;
-  clear: both;
-}
-
-.sb-left ul li {
-  display: inline-block;
-}
-
-.sb-right ul li {
-  display: inline-block;
+  padding: 15px 0;
 }
 
 .sb-left-text {
@@ -126,7 +145,124 @@ body {
 }
 
 /* NAV BAR */
-
 .nav-bar {
-  padding-top: 100px;
+  height: 80px;
+  line-height: 80px;
+}
+
+
+/* JUMBO */
+.jumbo {
+  position: relative;
+}
+
+.jumbo-bg {
+  background-image: url('../img/jumbotron.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.jumbo .jumbo-txt h1 {
+  width: 70%;
+  font-size: 46px;
+}
+
+.jumbo .jumbo-txt {
+  padding-top: 80px;
+  padding-bottom: 400px;
+}
+
+.jumbo .jumbo-txt p {
+  margin-top: 35px;
+  margin-bottom: 30px;
+  line-height: 30px;
+  font-size: 18px;
+}
+
+.jumbo .jumbo-txt a {
+  font-size: 15px;
+  padding: 23px 40px;
+}
+
+.jumbo-btn-p {
+  padding-top: 30px;
+}
+
+.jumbo .jumbo-txt .jumbo-btn-p p {
+  font-size: 13px;
+  margin-top: 4em;
+}
+
+.cyan-line {
+  width: 100%;
+  height: 11vh;
+  background-color: #AFEBE4;
+  border-top: 3px solid #33475B;
+  border-bottom: 3px solid #33475B;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+/* MAIN */
+/* SLOGAN */
+.slogan-content {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.slogan-content img {
+  height: 200px;
+}
+
+.slogan-content h2 {
+  font-size: 32px;
+}
+
+.slogan-content p {
+  font-size: 18px;
+  line-height: 30px;
+  padding:  30px 180px;
+}
+
+.crm {
+  padding: 50px 100px;
+}
+
+n-items .crm-left .crm-img img {
+  height: 100px;
+}
+
+.b-red {
+  border: 1px solid red;
+}
+
+.crm-right h4 {
+  font-size: 25px;
+
+
+}
+
+.crm-right h5 {
+  width:60%;
+  text-align: left;
+  border-bottom: 2px solid #A5ACAF;
+  line-height: 0.1em;
+  margin: 10px 0 20px;
+}
+
+.crm-right h5 span {
+  background:#fff;
+  padding-right: 40px;
+}
+
+.crm-right ul li:before {
+  content: "";
+  background: url('../img/Orange_Checkmark.svg') no-repeat;
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  margin-bottom: -0.3125rem;
+  margin-right: .625rem;
 }
