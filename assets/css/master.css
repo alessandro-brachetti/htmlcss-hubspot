@@ -65,6 +65,7 @@ body {
 .col-25 {
   width: calc(100% / 4 - 5px);
 }
+
 .bg-lightblue {
   background: #F4F9FD;
 }
@@ -342,7 +343,7 @@ body {
   padding:  30px 180px;
 }
 
-/* ITEM 1 */
+/* SLOGAN ITEM 1 */
 .slogan-items .crm-left {
   text-align: center;
   padding: 50px 50px;
@@ -385,7 +386,7 @@ body {
   padding: 20px 0;
 }
 
-/* ITEM 2 */
+/* SLOGAN ITEM 2 */
 .marketing {
   padding: 30px 60px;
 }
@@ -411,7 +412,7 @@ body {
   margin: 40px 0;
 }
 
-/* ITEM 3 */
+/* SLOGAN ITEM 3 */
 .sales {
   padding: 30px 60px;
 }
@@ -437,7 +438,7 @@ body {
   margin: 40px 0;
 }
 
-/* ITEM 4 */
+/* SLOGAN ITEM 4 */
 .service {
   padding: 30px 60px;
 }
@@ -589,4 +590,25 @@ footer h6 {
 
 .privacy {
   padding-top: 50px;
+}
+
+.live-chat {
+  height: 60px;
+  width: 60px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  margin-bottom: 30px;
+  margin-right: 50px;
+  background-color: rgb(66, 91, 118);
+  text-align: center;
+  border-radius: 50%;
+  box-shadow: rgb(0 0 0 / 10%) 0px 1px 6px, rgb(0 0 0 / 20%) 0px 2px 24px;
+}
+
+.live-chat i {
+  line-height: 60px;
+  font-size: 30px;
+  color: #FFFFFF;
 }
